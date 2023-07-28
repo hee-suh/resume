@@ -68,12 +68,6 @@ h1 {
   line-height: 1.1;
 }
 
-@media screen and (max-width: 960px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 h2 {
   font-size: 3rem;
   margin: 3.6rem 0 1.8rem 0;
@@ -89,7 +83,27 @@ h4 {
   margin: 0 0 0.9rem 0;
 }
 
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #333333;
+}
+
 @media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 3.6rem 0 1.8rem 0;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+    margin: 0 0 0.9rem 0;
+  }
+
   h4 {
     font-size: 1.3rem;
   }
@@ -99,12 +113,6 @@ h4 {
     margin: 0 0 0.5rem 0;
     color: #333333;
   }
-}
-
-h5 {
-  font-size: 1.3rem;
-  margin: 0 0 0.5rem 0;
-  color: #333333;
 }
 
 ul {
@@ -135,8 +143,9 @@ ul > li > p {
 .container {
   width: 100%;
   max-width: 1140px;
-  margin: 40px 150px 0 150px;
-  /* margin: auto; */
+  padding-top: 40px;
+  margin: auto;
+  /* margin: 40px 150px 0 150px; */
 }
 
 .period-mark {
@@ -233,10 +242,25 @@ ul > li > p {
   justify-content: flex-end;
 }
 
-.mb-6 {
+@media screen and (max-width: 960px) {
+  .contact {
+    margin: 40.67px 0;
+  }
+}
+.mb {
   margin-bottom: 12px;
 }
 
-.mr-6 {
+.mr {
   margin-right: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .mb {
+    margin-bottom: 4px;
+  }
+  
+  .mr {
+    margin-right: 4px;
+  }
 }
