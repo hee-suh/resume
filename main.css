@@ -144,6 +144,7 @@ ul > li > p {
   width: 100%;
   max-width: 1140px;
   margin: auto;
+  padding-top: 32px;
   /* margin: 40px 150px 0 150px; */
 }
 
