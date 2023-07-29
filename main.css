@@ -265,3 +265,7 @@ ul > li > p {
     margin-right: 4px;
   }
 }
+
+.last-updated {
+  padding-top: 5rem;
+}
