@@ -22,6 +22,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
 	scroll-behavior: smooth;
+	line-height: 1.2;
 }
 
 @media screen and (max-width: 960px) {
@@ -50,7 +51,7 @@ section {
 p {
 	margin: 0 0 0.9rem 0;
 	/* font-size: 1.1rem; */
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 a {
@@ -138,6 +139,28 @@ ul > li > p {
 	margin: 0;
 }
 
+.separator {
+	display: flex;
+}
+.separator > li {
+	padding: 4px 0px 4px 24px;
+}
+.separator > li:before {
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	content: '•';
+	color: #fa7367;
+	padding-left: 8px;
+}
+.separator > li:first-child {
+	padding-left: 0px;
+}
+.separator > li:first-child:before {
+	content: '';
+	padding-left: 0px;
+}
+
 .container {
 	width: 100%;
 	max-width: 1140px;
@@ -191,11 +214,16 @@ ul > li > p {
 	display: block;
 }
 
-.project {
-	padding: 1.35rem 0;
+.side-projects {
+	padding-top: 0.75rem;
+	line-height: 1.5;
 }
 
-.project:first-child {
+.paragraph {
+	padding: 0.5rem 0;
+}
+
+.paragraph:first-child {
 	padding-top: 0;
 }
 
