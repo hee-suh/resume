@@ -90,12 +90,14 @@ h5 {
 
 @media screen and (max-width: 960px) {
 	h1 {
-		font-size: 3.5rem;
+		font-size: 3rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0;
 	}
 
 	h2 {
 		font-size: 1.75rem;
-		margin: 3.6rem 0 1.8rem 0;
+		margin: 2rem 0 0.8rem 0;
 	}
 
 	h3 {
@@ -141,6 +143,7 @@ ul > li > p {
 
 .separator {
 	display: flex;
+	flex-flow: row wrap;
 }
 .separator > li {
 	padding: 4px 0px 4px 24px;
@@ -248,15 +251,8 @@ ul > li > p {
 	color: black;
 }
 
-.flex {
+.title {
 	display: flex;
-}
-
-.flex-item-center {
-	align-items: center;
-}
-
-.flex-space-between {
 	justify-content: space-between;
 }
 
@@ -275,8 +271,12 @@ ul > li > p {
 }
 
 @media screen and (max-width: 960px) {
+	.title {
+		flex-direction: column;
+	}
+
 	.contact {
-		margin: 40.67px 0;
+		margin: 32px 0;
 	}
 
 	.contact-item {
