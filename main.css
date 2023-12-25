@@ -5,27 +5,30 @@
 }
 
 ::selection {
-	background: #fbab19;
+	background: #ffd740;
 }
 
 html,
 body {
-	font-size: 16px;
+	font-size: 14px;
 	word-break: keep-all;
 	font-family: Pretendard, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR, Segoe UI, Apple SD Gothic Neo,
 		Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 	letter-spacing: -0.3px;
 	color: #191f28;
-	padding-bottom: 2rem;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
 	scroll-behavior: smooth;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 
-@media screen and (max-width: 960px) {
+.bg-floral-white {
+	background-color: #f1efe9;
+}
+
+@media screen and (max-width: 720px) {
 	html,
 	body {
 		font-size: 14px;
@@ -40,12 +43,8 @@ body:before {
 	content: '';
 	width: 100%;
 	height: 10px;
-	background: #fbab19;
-	background: linear-gradient(to right, #fa7367, #fbab19);
-}
-
-section {
-	padding: 0 2rem;
+	/* background: #ffd740;
+	background: linear-gradient(to right, #fa7367, #ffd740); */
 }
 
 p {
@@ -60,22 +59,23 @@ a {
 }
 
 a:hover {
-	color: #fbab19;
+	color: #ffd740;
 }
 
 h1 {
-	font-size: 4rem;
-	line-height: 1.1;
+	font-size: 2.5rem;
+	line-height: 1.3;
+	margin: 0;
 }
 
 h2 {
 	font-size: 2rem;
-	margin: 3rem 0 0rem 0;
+	margin: 1.25rem 0 0.5rem 0;
 }
 
 h3 {
-	font-size: 1.5rem;
-	margin: 0.25rem 0 0.75rem 0;
+	font-size: 1.4rem;
+	margin: 0.5rem 0 0.75rem 0;
 }
 
 h4 {
@@ -84,20 +84,17 @@ h4 {
 }
 
 h5 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	margin: 0 0 0.5rem 0;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 720px) {
 	h1 {
-		font-size: 3rem;
-		margin-top: 1.5rem;
-		margin-bottom: 0;
+		font-size: 2.5rem;
 	}
-
 	h2 {
-		font-size: 1.75rem;
-		margin: 2rem 0 0.8rem 0;
+		font-size: 1.5rem;
+		margin: 1.25rem 0 0.5rem 0;
 	}
 
 	h3 {
@@ -146,7 +143,7 @@ ul > li > p {
 	flex-flow: row wrap;
 }
 .separator > li {
-	padding: 4px 0px 4px 24px;
+	padding: 4px 0px 0px 24px;
 }
 .separator > li:before {
 	position: absolute;
@@ -166,64 +163,28 @@ ul > li > p {
 
 .container {
 	width: 100%;
-	max-width: 1140px;
-	margin: auto;
-	padding-top: 32px;
-	/* margin: 40px 150px 0 150px; */
+	max-width: 900px;
+	padding: 2rem 3rem;
+	margin: 2rem auto;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	background-color: white;
+}
+
+.summary {
+	font-size: 1.1rem;
 }
 
 .period-mark {
 	color: #fa7367;
 }
 
-.big-paragraph {
-	font-size: 1.4em;
-	line-height: 1.4;
-	font-weight: 500;
-}
-
-@media screen and (max-width: 960px) {
-	.big-paragraph {
-		font-size: 1.25rem;
-	}
-}
-
-.row {
-	display: flex;
-	padding: 2.7rem 0;
-	border-bottom: 1px solid #eeeeee;
-}
-
-@media screen and (max-width: 960px) {
-	.row {
-		flex-direction: column;
-	}
-}
-
-.three-col {
-	justify-content: space-between;
-}
-
-.last-paragraph {
-	padding: 1.75rem 0;
-}
-
 .other {
-	padding: 1.25rem 0;
+	padding-bottom: 1.25rem;
 	border-bottom: 1px solid #eeeeee;
 }
 
 .role {
 	display: block;
-}
-
-.side-projects {
-	padding-top: 1.25rem;
-	line-height: 1.5;
-}
-
-.paragraph {
-	padding: 0.5rem 0;
 }
 
 .paragraph:first-child {
@@ -251,53 +212,56 @@ ul > li > p {
 	color: black;
 }
 
-.title {
+.flex {
 	display: flex;
-	justify-content: space-between;
 }
 
-.contact {
-	margin: 53.12px 0;
-	display: flex;
+.flex-col {
 	flex-direction: column;
+}
+
+.items-end {
+	align-items: flex-end;
+}
+
+.justify-end {
 	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
 }
 
 .contact-item {
 	display: flex;
 	align-items: center;
-	margin-bottom: 8px;
-	height: 24px;
+	height: 20px;
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
 }
 
-@media screen and (max-width: 960px) {
-	.title {
-		flex-direction: column;
-	}
-
-	.contact {
-		margin: 32px 0;
-	}
-
-	.contact-item {
-		display: flex;
-		align-items: center;
-		margin-bottom: 8px;
-	}
+.subtitle {
+	font-size: 2rem;
+	margin-top: 0.5rem;
 }
 
 .mr {
 	margin-right: 8px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 720px) {
 	.mr {
 		margin-right: 4px;
 	}
 }
 
 .last-updated {
-	padding-top: 8rem;
+	padding-top: 4rem;
+	font-size: 0.8rem;
+}
+
+.font-600 {
+	font-weight: 600;
 }
 
 ul.nested-list {
@@ -315,10 +279,87 @@ ul.nested-list > li::before {
 	color: #333333;
 }
 
-.three-col {
-	display: flex;
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
 }
 
-.col {
-	flex: 1;
+.left-column {
+	border-right: 1px solid #eeeeee;
+	padding-right: 2rem;
+}
+
+.sm-contact {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {
+	* {
+		background-color: transparent !important;
+	}
+	.container {
+		margin: 0 auto;
+		padding: 2rem;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.left-column {
+		border: none;
+		padding-right: 2rem;
+	}
+	.md {
+		display: none;
+	}
+	.sm-contact {
+		display: flex;
+	}
+	.sm-contact-item {
+		display: flex;
+		align-items: center;
+		height: 20px;
+		font-size: 0.8rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+}
+
+.pr-4 {
+	padding-right: 2rem;
+}
+
+.pl-4 {
+	padding-left: 2rem;
+}
+
+.pt-1 {
+	padding-top: 0.5rem;
+}
+
+.pt-2 {
+	padding-top: 1rem;
+}
+
+.py-1 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+@media print {
+	/* All your print styles go here */
+	* {
+		background-color: white !important;
+	}
+	.container {
+		box-shadow: none;
+		margin-top: 0;
+	}
+	.last-updated {
+		display: none;
+	}
+	.print {
+		page-break-before: always;
+		padding-top: 0.5rem;
+	}
 }
