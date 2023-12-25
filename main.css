@@ -307,7 +307,7 @@ ul.nested-list > li::before {
 	}
 	.left-column {
 		border: none;
-		padding-right: 2rem;
+		padding-right: 0;
 	}
 	.md {
 		display: none;
