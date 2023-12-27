@@ -90,10 +90,10 @@ h5 {
 
 @media screen and (max-width: 720px) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.25rem;
 	}
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		margin: 1.25rem 0 0.5rem 0;
 	}
 
@@ -103,11 +103,11 @@ h5 {
 	}
 
 	h4 {
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 	}
 
 	h5 {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin: 0 0 0.5rem 0;
 		color: #333333;
 	}
@@ -136,6 +136,11 @@ ul > li:before {
 ul > li > p {
 	padding-top: 0.25rem;
 	margin: 0;
+}
+
+hr {
+	border: 0.5px solid #eeeeee;
+	margin: 1rem 0 1.5rem 0;
 }
 
 .separator {
@@ -290,7 +295,7 @@ ul.nested-list > li::before {
 	padding-right: 2rem;
 }
 
-.sm-contact {
+.sm {
 	display: none;
 }
 
@@ -304,6 +309,7 @@ ul.nested-list > li::before {
 	}
 	.grid {
 		grid-template-columns: 1fr;
+		grid-gap: 0;
 	}
 	.left-column {
 		border: none;
@@ -312,7 +318,7 @@ ul.nested-list > li::before {
 	.md {
 		display: none;
 	}
-	.sm-contact {
+	.sm {
 		display: flex;
 	}
 	.sm-contact-item {
