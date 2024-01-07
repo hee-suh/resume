@@ -44,7 +44,7 @@
 								<a class="dark-link" href="mailto:suhee0206@gmail.com">suhee0206@gmail.com</a>
 							</div>
 						</div>
-						<div class="pt-2 summary">
+						<div class="pt-4 pb-2 summary">
 							다양한 사람들과 협업하며 프로덕트를 만드는 과정을 즐기고, <br class="md" />필요한 기술을 빠르게 습득하고
 							적용하여 목표를 달성합니다.
 							<div style="height: 0.75rem"></div>
@@ -79,7 +79,7 @@
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="pt-4">
 				<h2>Work Experience</h2>
 				<div class="grid">
 					<div class="left-column">
@@ -127,7 +127,7 @@
 							</li>
 						</ul>
 						<h5>Tech Stack</h5>
-						<p>TypeScript, Next.js, Vercel, Turborepo, React Query, Tailwind CSS, MUI</p>
+						<p>TypeScript, Next.js, Vercel, Turborepo, React Query, Tailwind CSS, MUI, Jira</p>
 					</div>
 					<div>
 						<h3 class="role">Frontend Intern</h3>
@@ -140,7 +140,7 @@
 							일대일 화상 영어 서비스인
 							<a href="https://career.ringleplus.com/" target="_blank">링글</a>
 							의 클라이언트 파트에서 프론트엔드 개발을 하였습니다. 스쿼드에 속해 다양한 직군의 전문가들과 협업하였고,
-							서버를 직접 배포하고, Datadog으로 에러를 모니터링하고 Jira를 통해 태스크를 관리하면서 실무 경험을
+							pm2를 활용해 서버를 배포하고, Datadog으로 에러를 모니터링하고, Jira로 태스크를 관리하면서 실무 경험을
 							쌓았습니다. 또한 스터디, 문서화, 리팩토링을 통해 생산성 향상을 위해 노력했습니다.
 						</p>
 						<h5>What did I do</h5>
@@ -155,8 +155,8 @@
 								<ul class="nested-list">
 									<li>9명으로 구성된 스쿼드의 프론트엔드 개발자로, 웹뷰 개발의 40% 담당</li>
 									<li>
-										설정한 기간에 따른 영어 실력을 시각화하는 기능 개발 (Nivo 라인 차트를 이용한 CAF 통계 차트 / 기간을
-										설정하는 캘린더 팝업과 버튼 / React Query를 이용한 더보기 기능)
+										설정한 기간에 따른 영어 실력을 시각화하는 기능 개발 (Nivo 라인 차트를 이용한 CAF 통계 차트 / 기간
+										설정 캘린더 팝업 및 버튼 / React Query를 이용한 더보기)
 									</li>
 									<li>3차 베타 릴리즈 후 1,170명의 사용자에게 서비스</li>
 									<li>QA 반영, 리팩토링을 포함한 유지 보수 진행</li>
@@ -165,7 +165,7 @@
 							<li>
 								<div class="font-600">Rails로 구현된 &lt;수업권 연장&gt; 화면을 React로 이관</div>
 								<ul class="nested-list">
-									<li>다른 화면과의 일관성을 위하여 UX/UI 팀과의 협업으로 UI 개편</li>
+									<li>화면 일관성을 위해 UX/UI 팀과의 협업으로 UI 개편</li>
 									<li>결제 관련 코드 리팩토링 및 플로우 문서화</li>
 								</ul>
 							</li>
@@ -187,12 +187,12 @@
 							</li>
 						</ul>
 						<h5>Tech Stack</h5>
-						<p>TypeScript, Next.js, React Native, React Query, Tailwind CSS</p>
+						<p>TypeScript, Next.js, React Native, React Query, Tailwind CSS, Datadog, Jira</p>
 					</div>
 				</div>
 				<!-- <div class="other">
 					<h3>Freelancer</h3>
-					<h4 class="role">Frontend Engineer</h4>
+					<h5 class="role">Frontend Engineer</h5>
 					<span class="time">
 						<time datetime="2022-03">2022. 03</time> -
 						<time datetime="2023-01">2023. 02</time>
@@ -251,14 +251,9 @@
 						<ul>
 							<li>JavaScript, React, Redux Toolkit, Tailwind CSS로 프론트엔드 기술 환경 구성</li>
 							<li>
-								반응형 웹 구현
-								<ul class="nested-list">
-									<li>반려견 이상행동 문진 및 솔루션 제공 화면</li>
-									<li>반려견 이상행동 솔루션 조회 및 실천 화면</li>
-									<li>카카오톡 공유하기 기능이 있는 반려견 감정 분석 화면</li>
-								</ul>
+								반응형 웹 구현 (반려견 이상행동 문진 / 솔루션 조회 및 실천 / SNS 공유 기능이 있는 반려견 감정 분석)
 							</li>
-							<li>반려견 감정 예측을 위한 모델 학습 및 FastAPI를 이용한 모델 서빙</li>
+							<li>반려견 감정 분류 모델 학습 및 FastAPI로 모델 서빙</li>
 							<li>AWS EC2를 이용하여 프론트엔드와 ML 서버 배포</li>
 						</ul>
 						<h5>Tech Stack</h5>
@@ -288,8 +283,7 @@
 							<li>TypeScript, Expo로 프론트엔드 기술 환경 구성</li>
 							<li>Google OAuth 연동을 통한 로그인, 회원가입 기능 구현</li>
 							<li>Context API를 활용한 로그인 데이터 관리</li>
-							<li>카메라/갤러리를 이용한 사진 수집 및 전송 기능 구현</li>
-							<li>번역 화면 UI 구현</li>
+							<li>사진 선택 및 전송 기능 및 번역 화면 UI 구현</li>
 							<li>회원가입 화면, 번역 화면, 검색 화면 UI 개선</li>
 						</ul>
 						<h5>Tech Stack</h5>
@@ -332,7 +326,7 @@
 				</div> -->
 				<!-- <div class="other">
                     <h3>눈송테스트</h3>
-                    <h4 class="role">Frontend Developer</h4>
+                    <h5 class="role">Frontend Developer</h5>
                     <span class="time">
                         <time datetime="2021-02">2021. 02</time> | 
                         <time datetime="2022-01">2022. 01</time>
@@ -382,7 +376,7 @@
 				</div> -->
 				<!-- <div class="other">
                     <h3>Online Edu Helper</h3>
-                    <h4 class="role">Frontend Developer, Machine Learning Engineer, Designer</h4>
+                    <h5 class="role">Frontend Developer, Machine Learning Engineer, Designer</h5>
                     <span class="time">
                         <time datetime="2021-12-15">2021. 12. 15</time> - 
                         <time datetime="2021-12-19">2021. 12. 19</time>
@@ -413,7 +407,7 @@
 			</section>
 			<!-- <div class="other">
                 <h3>숙명여자대학교</h3>
-                <h4 class="role">Python Tutor</h4>
+                <h5 class="role">Python Tutor</h5>
                 <span class="time">
                     <time datetime="2021-03">2021. 03</time> -
                     <time datetime="2021-06">2021. 06</time>
@@ -425,120 +419,55 @@
             </div> -->
 			<hr class="sm" />
 			<section>
-				<h2>Awards</h2>
-				<div class="grid">
-					<div class="left-column">
-						<h3>Solution Challenge Global Top 50</h3>
-						<span class="time">
-							<time datetime="2022-05">2022. 05</time> &
-							<time datetime="2021-05">2021. 05</time>
-						</span>
-						<p>
-							Google for Developers에서 주최한 2022
-							<a
-								class="dark-link"
-								href="https://developers.google.com/community/gdsc-solution-challenge?hl=ko"
-								target="_blank"
-							>
-								Solution Challenge</a
-							>와 2021
-							<a
-								class="dark-link"
-								href="https://developers.google.com/community/gdsc-solution-challenge?hl=ko"
-								target="_blank"
-							>
-								Solution Challenge</a
-							>에 참가해서 두 해 모두 Global Top 50에 선정되었습니다.
-						</p>
-						<p>
-							프로젝트 <a href="#notinote">NotiNote</a> 와
-							<a href="https://github.com/dsc-sookmyung/2021-Gitribute-SolutionChallenge" target="_blank">Blooming</a>
-							을 출품했고, 두 번 모두 프론트엔드 개발자로 참여하며 프로젝트 매니징도 수행하였습니다. 문제를 찾고
-							정의하고 분석하고, 솔루션을 구현하고 테스트하고 개선하는 과정을 통해 문제 해결 능력을 향상시켰습니다.
-							<!-- Global Top 50에 진출하며 Google for Developers에서
-							<a href="https://www.youtube.com/watch?v=CMN0rd1-uOM" target="_blank">
-								Building impactful apps together: GDSC Sookmyung Leads story in Seoul, South Korea</a
-							>
-							라는 인터뷰를 가졌습니다. -->
-						</p>
-					</div>
-					<div>
-						<h3>제2회 숙명여자대학교 교내 알고리즘 경진대회 동상</h3>
-						<span class="time">
-							<time datetime="2022-05">2022. 05</time>
-						</span>
-						<p>교내 알고리즘 경진대회 SMUPC에서 Python으로 문제를 풀어 동상을 수상했습니다.</p>
-					</div>
-				</div>
-			</section>
-			<section class="print">
 				<div class="grid md">
-					<h2>Community</h2>
-					<h2>Education</h2>
+					<div style="font-size: 1.5rem; font-weight: bold; margin: 0.5rem 0 0.4rem 0">Awards</div>
+					<div style="font-size: 1.5rem; font-weight: bold; margin: 0.5rem 0 0.4rem 0">Community</div>
 				</div>
 				<div class="grid">
 					<div class="left-column">
 						<hr class="sm" />
-						<h2 class="sm">Community</h2>
-						<h3>Google Developer Student Clubs (GDSC)</h3>
-						<h4 class="role">GDSC Sookmyung Lead</h4>
-						<span class="time">
-							<time datetime="2022-08">2022. 08</time> -
-							<time datetime="2023-07">2023. 07</time>
-						</span>
-						<p>
-							구글 기술에 관심이 있는 학생들을 위한 대학교 기반 커뮤니티인
-							<a class="dark-link" href="https://gdsc.community.dev/sookmyung-womens-university/" target="_blank">
-								GDSC Sookmyung</a
-							>
-							의 리드를 맡았고, 22-23 GDSC 우수 리드로 선정되었습니다. 숙명여자대학교의 학우들에게 다양한 개발 교육
-							기회를 제공할 세션, 스터디, 커뮤니티 이벤트, 연합 이벤트 등을 주최했습니다.
-							<a
-								class="dark-link"
-								href="https://gdg.community.dev/events/details/google-gdg-campus-korea-presents-gdg-campus-korea-x-gdsc-devfest-merry-careermas/"
-								target="_blank"
-								>[GDG Campus Korea x GDSC DevFest] Merry Careermas</a
-							>와
-							<a
-								class="dark-link"
-								href="https://gdsc.community.dev/events/details/developer-student-clubs-sookmyung-womens-university-presents-2023-gdsc-kr-winter-cup-bonseon/"
-								target="_blank"
-								>2023 GDSC KR Winter Cup</a
-							>
-							해커톤에 운영진으로 참여하였습니다.
-						</p>
-						<h4 class="role">GDSC Sookmyung Member</h4>
-						<span class="time">
-							<time datetime="2020-09">2020. 09</time> -
-							<time datetime="2021-08">2021. 08</time>
-						</span>
-						<p>GDSC Sookmyung의 멤버로 활동하며, 세션, 스터디, 대회 등 다양한 이벤트에 참여했습니다.</p>
-					</div>
-					<div>
-						<hr class="sm" />
+						<h2 class="sm">Awards</h2>
 						<div>
-							<h2 class="sm">Education</h2>
-							<h3>숙명여자대학교</h3>
-							<h4 class="role">IT공학전공 학사</h4>
+							<h3>Solution Challenge Global Top 50</h3>
 							<span class="time">
-								<time datetime="2019-02">2019. 02</time> - <time datetime="2023-08">2023. 08</time>
+								<time datetime="2022-05">2022. 05</time> &
+								<time datetime="2021-05">2021. 05</time>
 							</span>
-							<ul class="separator">
-								<li>GPA <strong>4.3/4.5</strong></li>
-								<li>Major GPA <strong>4.28/4.5</strong></li>
-							</ul>
+							<p>
+								Google Developers에서 주최한
+								<a
+									class="dark-link"
+									href="https://developers.google.com/community/gdsc-solution-challenge?hl=ko"
+									target="_blank"
+								>
+									Solution Challenge</a
+								>에 프론트엔드 개발자로 참여해 프로젝트 <a href="#notinote">NotiNote</a> 와
+								<a href="https://github.com/dsc-sookmyung/2021-Gitribute-SolutionChallenge" target="_blank">Blooming</a>
+								을 출품히여, 두 번 모두 Global Top 50에 선정되었습니다. 문제 정의, 솔루션 구현, 테스트, 개선하는 과정을
+								통해 문제 해결 능력을 향상시켰습니다.
+								<!-- Global Top 50에 진출하며 Google for Developers에서
+									<a href="https://www.youtube.com/watch?v=CMN0rd1-uOM" target="_blank">
+										Building impactful apps together: GDSC Sookmyung Leads story in Seoul, South Korea</a
+									>
+									라는 인터뷰를 가졌습니다. -->
+							</p>
+							<h3>제2회 숙명여자대학교 알고리즘 경진대회 동상</h3>
+							<span class="time">
+								<time datetime="2022-05">2022. 05</time>
+							</span>
+							<p>교내 알고리즘 경진대회에 Python으로 참가해 동상을 수상했습니다.</p>
 						</div>
 						<hr class="sm" style="margin-top: 1.9rem" />
 						<div>
 							<h2>Skills</h2>
 							<div>
-								<h4>Languages</h4>
+								<h5>Languages</h5>
 								<ul class="separator">
 									<li>JavaScript</li>
 									<li>TypeScript</li>
 									<li>Python</li>
 								</ul>
-								<h4>Frameworks & Libraries</h4>
+								<h5>Frameworks & Libraries</h5>
 								<ul class="separator">
 									<li>Next.js</li>
 									<li>React</li>
@@ -548,8 +477,8 @@
 									<li>Tailwind CSS</li>
 									<li>MUI</li>
 								</ul>
-								<h4>Tools</h4>
-								<ul class="separator">
+								<h5>Tools</h5>
+								<ul class="separator" style="margin-bottom: 0">
 									<li>Github</li>
 									<li>Vercel</li>
 									<li>AWS</li>
@@ -560,6 +489,47 @@
 									<li>Slack</li>
 								</ul>
 							</div>
+						</div>
+					</div>
+					<div>
+						<hr class="sm" />
+						<div>
+							<h2 class="sm">Community</h2>
+							<h3>Google Developer Student Clubs (GDSC)</h3>
+							<h5 class="role">GDSC Sookmyung Lead</h5>
+							<span class="time">
+								<time datetime="2022-08">2022. 08</time> -
+								<time datetime="2023-07">2023. 07</time>
+							</span>
+							<p>
+								구글 기술에 관심이 있는 학생들을 위한 대학교 기반 커뮤니티인
+								<a class="dark-link" href="https://gdsc.community.dev/sookmyung-womens-university/" target="_blank">
+									GDSC Sookmyung</a
+								>을 리드했고, 22-23 GDSC 우수 리드로 선정되었습니다. 2021년 9월부터 1년간 멤버로 활동하며 많이
+								성장했기에, 다른 학우들도 풍부한 경험을 쌓을 수 있도록 세션, 스터디, 커뮤니티 이벤트,
+								<a
+									class="dark-link"
+									href="https://gdsc.community.dev/events/details/developer-student-clubs-sookmyung-womens-university-presents-2023-gdsc-kr-winter-cup-bonseon/"
+									target="_blank"
+									>2023 GDSC KR Winter Cup</a
+								>
+								등의 연합 이벤트를 주최했습니다. 또한 스크럼, 팀 블로그, 세미나를 통해 멤버들이 Solution Challenge에
+								완성도 높은 프로젝트를 제출할 수 있도록 도왔고, 5개의 팀이 Global Top 100에 이름을 올리며, 전 세계에서
+								가장 많은 준결승 진출을 이루어냈습니다.
+							</p>
+						</div>
+						<hr class="sm" />
+						<div>
+							<h2>Education</h2>
+							<h3>숙명여자대학교</h3>
+							<h5 class="role">IT공학전공 학사</h5>
+							<span class="time">
+								<time datetime="2019-02">2019. 02</time> - <time datetime="2023-08">2023. 08</time>
+							</span>
+							<ul class="separator">
+								<li>GPA <strong>4.3/4.5</strong></li>
+								<li>Major GPA <strong>4.28/4.5</strong></li>
+							</ul>
 						</div>
 					</div>
 				</div>
